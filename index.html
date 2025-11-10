@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Profil Sekolah - Mts Baituk Muttaqin</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+</head>
+<body>
+
+  <div class="header">
+    <img src="logo1.png" alt="Logo Sekolah" class="logo">
+<!-- JUDUL -->
+    <h4><div class="row">
+							<div class="col-12">
+								<div class="judul">
+									<div class="text-berjalan bg-white text-grey"><marquee height="25" scrolldelay="150">🕌مرحباًSELAMAT DATANG DI MTS BAITUL MUTTAQINمرحباً🕌  </marquee></div></h4>
+    <img src="logo2.png" alt="Logo Kanan" class="logo">
+  </div>
+
+  <nav class="navbar">
+    <button class="nav-button active" onclick="openTab('beranda', this)"><i class="fas fa-home"></i> Beranda</button>
+    <button class="nav-button" onclick="openTab('sejarah', this)"><i class="fas fa-history"></i> Sejarah</button>
+    <button class="nav-button" onclick="openTab('visi', this)"><i class="fas fa-bullseye"></i> Visi & Misi</button>
+    <button class="nav-button" onclick="openTab('struktur', this)"><i class="fas fa-sitemap"></i> Struktur</button>
+    <button class="nav-button" onclick="openTab('data', this)"><i class="fas fa-chart-bar"></i> Data Sekolah</button>
+    <button class="nav-button" onclick="openTab('unggulan', this)"><i class="fas fa-star"></i> Program Unggulan</button>
+    <button class="nav-button" onclick="openTab('kontak', this)"><i class="fas fa-envelope"></i> Kontak</button>
+  </nav>
+
+  <!-- BERANDA -->
+  <section id="beranda" class="content-section active">
+    <h2>Selamat Datang di </h2>
+    <p class="lead">MTS BAITUL MUTTAQIN - “Mendidik dengan Iman, Menginspirasi dengan Ilmu.”</p>
+
+      <div class="card overview-card" onclick="openAboutModal()">
+  <i class="fas fa-info-circle big-icon"></i>
+  <h3>Tentang Sekolah</h3>
+  <p>Profil singkat Mts Baitul Muttaqin</p>
+</div>
+
+      <div class="card stats-card" onclick="openModal('statistikModal')">
+        <i class="fas fa-sign big-icon"></i>
+        <h3>Statistik Singkat</h3>
+        <p id="summaryText">Guru: — | Siswa: —</p>
+        <small>Klik untuk rincian lengkap</small>
+      </div>
+
+      <div class="card contact-card" onclick="openTab('kontak', document.querySelector('.nav-button:nth-child(7)'))">
+        <i class="fas fa-phone big-icon"></i>
+        <h3>Hubungi Kami</h3>
+        <p>CS: 0877-9763-0439 • Instagram: @MTS BAITUL MUTTAQIN</p>
+      </div>
+    </div>
+
+    <h3>Berita & Pengumuman Singkat</h3>
+    <ul class="announcement-list">
+      <li><strong>10 Nov 2025:</strong> Penerimaan Peserta Didik Baru dibuka.</li>
+      <li><strong>25 Nov 2025:</strong> Sosialisasi Program Industri 4.0 untuk  XII.</li>
+      <li><strong>10 Des 2025:</strong> Pentas Seni & Pameran Karya Siswa.</li>
+    </ul>
+  </section>
+
+  <!-- SEJARAH -->
+  <section id="sejarah" class="content-section">
+    <h2>Sejarah Sekolah</h2>
+    <div class="history">
+      <h4><p><strong>🧐Awal Berdiri (1994):</strong><br> MTS Baitul Muttaqin didirikan pada 1994 sebagai wujud kepedulian masyarakat terhadap pentingnya pendidikan Islam yang berkualitas bagi generasi muda. Berawal dari kegiatan belajar mengajar di lingkungan Masjid Baitul Muttaqin dengan fasilitas sederhana dan jumlah siswa terbatas, madrasah ini berkembang berkat dukungan masyarakat, tenaga pendidik yang berdedikasi, serta perhatian para dermawan.</br>
+
+Seiring waktu, MTS Baitul Muttaqin memiliki gedung sendiri, sarana belajar yang memadai, dan program pendidikan yang mengintegrasikan ilmu umum serta agama. Madrasah ini terus berkomitmen mencetak generasi yang berilmu, beriman, dan berakhlak mulia, serta aktif dalam kegiatan akademik dan keagamaan di tingkat lokal maupun regional. Dengan moto “Berilmu, Beriman, Berakhlak Mulia”, MTS Baitul Muttaqin menjadi lembaga pendidikan yang unggul dan siap menghadapi tantangan zaman </p>
+
+      <p><strong>🧐Perkembangan (2012–2018):</strong><br> MTS Baitul Muttaqin didirikan pada 1994 sebagai wujud kepedulian masyarakat terhadap pentingnya pendidikan Islam yang berkualitas bagi generasi muda. Berawal dari kegiatan belajar mengajar di lingkungan Masjid Baitul Muttaqin dengan fasilitas sederhana dan jumlah siswa terbatas, madrasah ini berkembang berkat dukungan masyarakat, tenaga pendidik yang berdedikasi, serta perhatian para dermawan.
+
+Seiring waktu, MTS Baitul Muttaqin memiliki gedung sendiri, sarana belajar yang memadai, dan program pendidikan yang mengintegrasikan ilmu umum serta agama. Madrasah ini terus berkomitmen mencetak generasi yang berilmu, beriman, dan berakhlak mulia, serta aktif dalam kegiatan akademik dan keagamaan di tingkat lokal maupun regional. Dengan moto “Berilmu, Beriman, Berakhlak Mulia”, MTS Baitul Muttaqin menjadi lembaga pendidikan yang unggul dan siap menghadapi tantangan zaman. </p>
+
+      <p><strong>🧐Era Modern (2019–sekarang):</strong><br> Sejak 2019, MTS Baitul Muttaqin terus berinovasi dengan pembelajaran digital dan kegiatan ekstrakurikuler yang kreatif. Prestasi akademik dan non-akademik meningkat, menjadikan madrasah semakin maju dan siap mencetak generasi Qurani yang berilmu, berakhlak mulia, dan adaptif terhadap perkembangan zaman. </p>
+    </div></h4>
+  </section>
+
+  <!-- VISI & MISI -->
+  <section id="visi" class="content-section">
+    <h2>Visi & Misi</h2>
+
+    <div class="vision-mission-grid">
+      <div class="card">
+        <h3>Visi</h3>
+        <h4><p>Menjadi madrasah unggul yang mampu mencetak generasi Qurani yang berilmu, beriman, berakhlak mulia, dan memiliki kemampuan akademik serta keterampilan yang siap menghadapi tantangan zaman.</p><h4>
+      </div>
+
+      <div class="card">
+        <h3>Misi</h3>
+        <ol>
+         <h4> <li>➀ Menyelenggarakan pendidikan yang mengintegrasikan ilmu umum dan agama secara seimbang, sehingga siswa tidak hanya cerdas secara akademik tetapi juga memiliki keimanan yang kuat.</li>
+          <li>➁ Membentuk karakter siswa yang disiplin, jujur, bertanggung jawab, peduli lingkungan, dan berakhlak mulia sesuai ajaran Islam.</li>
+          <li>➂ Mengembangkan potensi, kreativitas, dan keterampilan siswa melalui kegiatan ekstrakurikuler, lomba, dan program pengembangan diri.</li>
+          <li>➃ Mendorong partisipasi aktif siswa dalam kegiatan keagamaan, sosial, dan kemasyarakatan sebagai wujud pengamalan ilmu dan akhlak.</li>
+		  <li>⓹ Meningkatkan kualitas guru dan sarana prasarana pendidikan untuk mendukung proses belajar mengajar yang efektif dan inovatif.</li></h4>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- === STRUKTUR ORGANISASI === -->
+<section id="struktur" class="content-section">
+  <h2>Struktur Organisasi MTs Baitul Muttaqin</h2>
+  <p class="lead">Struktur organisasi menggambarkan peran dan tanggung jawab setiap bagian di madrasah.</p>
+
+  <div class="structure-main">
+   <!-- Kepala Madrasah -->
+    <div class="org-card" onclick="openStrukturModal('kepala')">
+      <i class="fas fa-user-tie"></i>
+      <h4>Kepala Madrasah</h4>
+      <p>Ahmad Dupriansyah, S.Pd, MM</p>
+    </div> 
+   
+  <!-- Wakil Kepala Madrasah -->
+    <div class="org-card" onclick="openStrukturModal('wakil')">
+      <i class="fas fa-users-cog"></i>
+      <h4>Wakil Kepala Madrasah</h4>
+      <p>Shalahuddin S.Pd.i</p>
+    </div> 
+    
+    <!-- Komite -->
+<div class="org-card" onclick="openStrukturModal('komite')">
+  <i class="fas fa-handshake"></i>
+  <h4>Komite Madrasah</h4>
+  <p>Menjalin kemitraan dengan masyarakat dan orang tua siswa.</p>
+</div>
+
+<!-- Serba Bakti -->
+<div class="org-card" onclick="openStrukturModal('serbaBakti')">
+  <i class="fas fa-hands-helping"></i>
+  <h4>Serba Bakti</h4>
+  <p>Kegiatan sosial dan keagamaan siswa.</p>
+</div>
+
+<!-- Pelaksana Teknis -->
+<div class="org-card" onclick="openStrukturModal('pelaksanaTeknis')">
+  <i class="fas fa-cogs"></i>
+  <h4>Pelaksana Teknis</h4>
+  <p>Menangani urusan teknis dan operasional madrasah.</p>
+</div>
+
+<!-- Bendahara -->
+<div class="org-card" onclick="openStrukturModal('bendahara')">
+  <i class="fas fa-wallet"></i>
+  <h4>Bendahara</h4>
+  <p>Mengelola keuangan madrasah.</p>
+</div>
+
+<!-- Operator -->
+<div class="org-card" onclick="openStrukturModal('operator')">
+  <i class="fas fa-laptop-code"></i>
+  <h4>Operator</h4>
+  <p>Mengelola data digital madrasah.</p>
+</div>
+
+<!-- Perpustakaan -->
+<div class="org-card" onclick="openStrukturModal('perpustakaan')">
+  <i class="fas fa-book-reader"></i>
+  <h4>Perpustakaan</h4>
+  <p>Menumbuhkan budaya literasi Islami.</p>
+</div>
+
+<!-- Laboratorium -->
+<div class="org-card" onclick="openStrukturModal('laboratorium')">
+  <i class="fas fa-flask"></i>
+  <h4>Laboratorium</h4>
+  <p>Fasilitas praktikum IPA & Komputer.</p>
+</div>
+
+<!-- Waka Kesiswaan -->
+<div class="org-card" onclick="openStrukturModal('wakaKesiswaan')">
+  <i class="fas fa-user-friends"></i>
+  <h4>Waka Kesiswaan</h4>
+  <p>Membina kedisiplinan dan kegiatan siswa.</p>
+</div>
+
+<!-- Waka Sarpras -->
+<div class="org-card" onclick="openStrukturModal('wakaSarpras')">
+  <i class="fas fa-tools"></i>
+  <h4>Waka Sarpras</h4>
+  <p>Mengelola sarana dan prasarana madrasah.</p>
+</div>
+
+<!-- Waka Humas -->
+<div class="org-card" onclick="openStrukturModal('wakaHumas')">
+  <i class="fas fa-bullhorn"></i>
+  <h4>Waka Humas</h4>
+  <p>Membangun hubungan baik dengan masyarakat dan instansi luar.</p>
+</div>
+
+    <!-- Tata Usaha -->
+    <div class="org-card" onclick="openStrukturModal('tu')">
+      <i class="fas fa-clipboard-list"></i>
+      <h4>Tata Usaha</h4>
+      <p>Koordinator: Ibu Siti Nurhalimah<br>Staf TU & Administrasi</p>
+    </div>
+
+    <!-- Guru Program Unggulan -->
+    <div class="org-card" onclick="openStrukturModal('guru')">
+      <i class="fas fa-chalkboard-teacher"></i>
+      <h4>Guru Program Unggulan</h4>
+      <ul style="list-style:none; padding:0; margin:0; text-align:left;">
+        <li>📘 <strong>Ustadz Arif Rahman</strong> — <em>Tahfidz Al-Qur’an</em></li>
+        <li>🗣️ <strong>Muhammad Abdillah</strong> — <em>English & Arabic Day</em></li>
+        <li>🌿 <strong>Ahmad</strong> — <em>Madrasah Hijau</em></li>
+        <li>🎧 <strong>Khairul Rijal</strong> — <em>Seni Sound System Islami</em></li>
+      </ul>
+    </div>
+</section>
+
+  <!-- DATA SEKOLAH -->
+  <section id="data" class="content-section">
+    <h2>Data Sekolah & Statistik</h2>
+
+    <div class="data-grid">
+      <div class="card data-card">
+        <h4>Jumlah Guru & Staf</h4>
+        <ul>
+          <li><strong>Guru Tetap:32</strong> <span id="guruTotal">—</span> orang</li>
+          <li><strong>Staf Tata Usaha:6</strong> <span id="stafTotal">—</span> orang</li>
+          <li><strong>Tenaga Kependidikan Lain:5</strong> <span id="lainTotal">—</span> orang</li>
+        </ul>
+      </div>
+
+      <div class="card data-card">
+        <h4>Jumlah Peserta Didik</h4>
+        <table class="data-table">
+          <thead><tr><th></th><th>Laki-Laki</th><th>Perempuan</th><th>Total</th></tr></thead>
+          <tbody id="siswaTableBody">
+            <!-- diisi oleh JS -->
+          </tbody>
+          <tfoot id="siswaFooter"></tfoot>
+        </table>
+      </div>
+
+      <div class="card data-card">
+        <h4>Rasio Guru : Siswa</h4>
+        <p id="rasioText">—</p>
+      </div>
+    </div>
+
+   
+  </section>
+
+  <!-- PROGRAM UNGGULAN -->
+  <section id="unggulan" class="content-section">
+    <h2>Program Unggulan</h2>
+
+    <div class="program-grid">
+      <div class="program-card">
+        <h3>Tahfidz Al-Qur'an</h3>
+        <h4>Silahkan Di Klik ⬇⬇⬇⬇⬇</h4>
+        <button class="btn" onclick="openProgramModal('Tahfidz')">Detail</button>
+      </div>
+
+      <div class="program-card">
+        <h3>Khataman Al-Qur'an</h3>
+        <h4>Silahkan Di Klik ⬇⬇⬇⬇⬇</h4>
+        <button class="btn" onclick="openProgramModal('akuntansi')">Detail</button>
+      </div>
+      
+      <div class="program-card">
+        <h3>Seni Sound Sistem</h3>
+        <h4>Silahkan Di Klik ⬇⬇⬇⬇⬇</h4>
+        <button class="btn" onclick="openProgramModal('bss')">Detail</button>
+      </div>
+
+      <div class="program-card">
+        <h3>Ziarah ke Makam Wali Songo</h3>
+        <h4>Silahkan Di Klik ⬇⬇⬇⬇⬇</h4>
+        <button class="btn" onclick="openProgramModal('multimedia')">Detail</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- KONTAK -->
+  <section id="kontak" class="content-section">
+    <h2>Kontak & Lokasi</h2>
+
+    <div class="contact-grid">
+      <div class="contact-item card">
+        <h4>Alamat</h4>
+        <p>Jalan Pendidikan No. 10, Bitin</p>
+      </div>
+
+      <div class="contact-item card">
+        <h4><center>WhatsApp</center></h4>
+        <p>Wa: <a href="https://wa.me/6283862006850" target="_blank">Ahmad Dupriansyah S.Pd MM</a></p>
+      </div>
+
+      <div class="contact-item card">
+        <h4>Sosial Media</h4>
+        <p>Instagram: <a href="https://www.instagram.com/dup_omkegams?igsh=N3F0bW8zZDVsd2h4" target="_blank">@KEPALA SEKOLAH</a></p>
+      </div>
+
+      <div class="contact-item card map-card">
+        <h4>Lokasi</h4>
+        <iframe src="https://www.google.com/maps?q=SMK+Shalatiyah+Bitin&output=embed" style="border:0; width:100%; height:160px;" loading="lazy" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- MODAL STATISTIK -->
+  <div id="statistikModal" class="modal">
+    <div class="modal-content">
+      <span class="close-button" onclick="closeModal('statistikModal')">&times;</span>
+      <h3>Rincian Statistik Sekolah</h3>
+      <div id="modalStats"></div>
+    </div>
+  </div>
+
+  <!-- MODAL PROGRAM -->
+  <div id="programModal" class="modal">
+    <div class="modal-content modal-content-proker">
+      <span class="close-button" onclick="closeModal('programModal')">&times;</span>
+      <h3 id="programTitle"></h3>
+      <div id="programContent"></div>
+    </div>
+  </div>
+
+<!-- MODAL TENTANG SEKOLAH -->
+<div id="aboutModal" class="modal">
+  <div class="modal-content">
+    <span class="close-button" onclick="closeModal('aboutModal')">&times;</span>
+    <h3 id="aboutModalTitle">Tentang SMKS Shalatiyah Bitin</h3>
+    <div id="aboutModalContent"></div>
+  </div>
+</div>
+
+<!-- MODAL STRUKTUR ORGANISASI -->
+<div id="strukturModal" class="modal">
+  <div class="modal-content">
+    <span class="close-button" onclick="closeModal('strukturModal')">&times;</span>
+    <h3 id="strukturModalTitle"></h3>
+    <div id="strukturModalContent"></div>
+  </div>
+</div>
+
+  <footer>
+    <div class="row">
+							<div class="col-12">
+								<div class="border-atas-bawah">
+									<div class="text-berjalan bg-white text-grey"><marquee height="17" scrolldelay="150">©️copyright ° MTS BAITUL MUTTAQIN• &copy; 2025 • Profil Sekolah<a href="https://www.instagram.com/dup_omkegams?igsh=N3F0bW8zZDVsd2h4" target="_blank"> 👳 Ahmad Dupriansyah S.Pd MM</a></marquee></div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
